@@ -1,20 +1,20 @@
   @font-face {
     font-family: 'Anton';
-    src: url('/Resources/fonts/Anton-Regular.ttf') format('truetype'); /* Asegúrate de proporcionar la ruta correcta al archivo de fuente */
+    src: url('Resources/fonts/Anton-Regular.ttf') format('truetype'); /* Asegúrate de proporcionar la ruta correcta al archivo de fuente */
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'BebasNeue';
-    src: url('/Resources/fonts/BebasNeue-Regular.ttf') format('truetype'); /* Asegúrate de proporcionar la ruta correcta al archivo de fuente */
+    src: url('Resources/fonts/BebasNeue-Regular.ttf') format('truetype'); /* Asegúrate de proporcionar la ruta correcta al archivo de fuente */
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Barlow';
-    src: url('/Resources/fonts/Barlow-Regular.ttf') format('truetype'); /* Asegúrate de proporcionar la ruta correcta al archivo de fuente */
+    src: url('Resources/fonts/Barlow-Regular.ttf') format('truetype'); /* Asegúrate de proporcionar la ruta correcta al archivo de fuente */
     font-weight: normal;
     font-style: normal;
   }

@@ -1,8 +1,8 @@
 /* Fade effect on images in home section. */
 const images = [
-    '/Resources/Images/DentCar-Gallery/bolloDemo1.jpg',
-    '/Resources/Images/DentCar-Gallery/bolloDemo2.jpg',
-    '/Resources/Images/DentCar-Gallery/bolloDemo3.jpg'
+    'Resources/Images/DentCar-Gallery/bolloDemo1.jpg',
+    'Resources/Images/DentCar-Gallery/bolloDemo2.jpg',
+    'Resources/Images/DentCar-Gallery/bolloDemo3.jpg'
   ];
   
   const displayImage = document.getElementById('display-image');
