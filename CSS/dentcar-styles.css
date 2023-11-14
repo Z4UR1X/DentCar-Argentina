@@ -1,0 +1,411 @@
+  @font-face {
+    font-family: 'Anton';
+    src: url('/Resources/fonts/Anton-Regular.ttf') format('truetype'); /* Asegúrate de proporcionar la ruta correcta al archivo de fuente */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'BebasNeue';
+    src: url('/Resources/fonts/BebasNeue-Regular.ttf') format('truetype'); /* Asegúrate de proporcionar la ruta correcta al archivo de fuente */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Barlow';
+    src: url('/Resources/fonts/Barlow-Regular.ttf') format('truetype'); /* Asegúrate de proporcionar la ruta correcta al archivo de fuente */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  :root {
+    --backgroundColor: rgb(0, 0, 0);
+    --panel-color: rgb(25, 25, 25);
+    --container-color: rgba(131, 131, 131, 0.25);
+    --red-detail: rgb(105, 20, 13);
+    --footer-index-color: rgb(17, 15, 15);
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+/* -- Navbar Section -- */
+
+  nav {
+    background-color: var(--panel-color);
+    border-bottom: solid 1px var(--red-detail);
+    transition: background-color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  }
+
+  #navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 18vh;
+    max-height: 18vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  /* - Navbar Buttons - */
+
+  .nav-button {
+    position: relative;
+    display: flex;
+    height: 18vh;
+    width: 150px;
+    max-width: 20vw;
+    right: 0vw;
+    padding: 0;
+    transition: padding 0.5s ease-in-out;
+    
+  }
+
+  .nav-link {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 18vh;
+    font-family: 'BebasNeue', sans-serif;
+    font-weight: 100;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .nav-button p{
+    font-size: 2rem;
+    color: white;
+    border-radius: 3.5px;
+    padding: 0px 5px;
+    line-height: 1;
+    transition: border-bottom 0.5s ease-in-out, transform 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+  }
+
+  .nav-button p:hover {
+    text-shadow: 0px 0px 15px var(--red-detail);
+  }
+  /**/
+
+  /* - Navbar Social Media Links - */
+
+  #nav-contact-panel {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 25vw;
+    top: 6vh;
+  }
+
+  #profile-link {
+    padding: 15px;
+  }
+
+  #instagram-logo {
+    background: linear-gradient(45deg, #f89c71, #ff395a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  #link-logo-container {
+    font-size: 2rem;
+    text-shadow: 0px 2px 5px black;
+    transition: text-shadow 0.3s ease-in-out;
+  }
+
+  #link-logo-container:hover {
+    text-shadow: 0px 0px 15px var(--red-detail);
+  }
+
+  /* - Logo Properties Section - */
+
+  #logo-cont {
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 20vw;
+    max-width: 20vw;
+    max-height: fit-content;
+  }
+
+  #logo-img{
+    position: absolute;
+    top: -100px;
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+  }
+/*x*/
+
+/* -- Home Section -- */
+  #home-section {
+    background: linear-gradient(var(--backgroundColor), var(--red-detail));
+    position: relative;
+    height: 100vh;
+  }
+
+  #image-container {
+    position: relative;
+    display: flex;
+    top: 20vh;
+    left: 4vw;
+    height: 70vh;
+    width: 60vw;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgba(50, 0, 0, 0.25);
+    z-index: 0;
+  }
+
+  #display-image {
+    object-fit: cover;
+    max-height: 70vh;
+    width: 100%;
+    border-radius: 3px;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  #description-cont {
+
+  }
+
+  #imageDescription {
+    position: absolute;
+    top: 35vh;
+    right: 10vw;
+    width: 25vw;
+    font-family: 'BebasNeue';
+    font-size: xx-large;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    line-height: 1.6;
+    transform: scale(1.4);
+    margin: 0px 15px;
+
+  }
+
+  #imageDescription span { /* Animation for the slogan in main section */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-wrap: nowrap;
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+      .anim-mov-right {
+        transform: translateX(0%);
+      }
+
+      .anim-mov-left {
+        transform: translateX(-0%);
+      }
+/*x*/
+
+/* -- Services Section -- */
+
+  #trabajos-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;
+    width: 100%;
+  /*  background: url(/Resources/Images/DentCar-Gallery/BackgroundWallpaper.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgb(32, 30, 30);
+    padding: 0;
+    margin: 0;
+    border-bottom: solid 2px rgb(255, 160, 160);
+    box-shadow: 0px 5px 5px rgb(134, 0, 0);
+  }
+
+  #trabajos-section > h1 { /* Título de sección de trabajos */
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 2px var(--container-color);
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  h1 {
+    font-family: 'BebasNeue';
+    color: white;
+  }
+
+  #trabajos-cont {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 50px;
+  }
+
+  .article-cont {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    border-top: solid 2px var(--red-detail);
+    border-bottom: solid 2px var(--red-detail);
+    padding: 30px 0px;
+  }
+
+  .article-cont:first-child {
+    border-top: none;
+  }
+
+  .article-cont:last-child {
+    border-bottom: none;
+  }
+
+  #img-laburo {
+    min-width: 50%;
+    max-height: 80vh;
+    width: 50vw;
+    border-radius: 2px;
+  }
+
+  #p-laburo {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0px 65px;
+    color: white;
+    text-align: justify;
+    font-family: 'Barlow';
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    text-shadow: 0px 0px 4px black;
+  }
+/*-x-*/
+
+/* -- Sección de Contacto -- */
+  #contact-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(var(--red-detail), var(--backgroundColor));
+  }
+
+  #contact-panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 25px;
+    margin: 25px;
+  }
+
+  #phone-cont {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: var(--panel-color);
+    padding: 0px 25px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 3px 2px black;
+  }
+
+  #phone-cont i {
+    transform: scale(1.6);
+    color: white;
+    padding-right: 10px;
+  }
+
+  #contactNumber {
+    font-family: 'BebasNeue';
+    font-weight: 300;
+    font-size: xx-large;
+    color: white;
+  }
+  
+  .contactLink-cont :not(h1){
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.6);
+    padding: 8px 10px;
+  }
+
+  #h1-contact {
+    position: relative;
+    display: inline-block;
+    font-weight: 300;
+    font-size: xx-large;
+    text-shadow: 0px 0px 5px black;
+  }
+
+  #googleMap-cont {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 50px;
+  }
+
+  #h1-map {
+    position: relative;
+    font-weight: 300;
+    text-shadow: 0px 0px 5px black;
+  }
+
+  #googleMap {
+    width: 400px;
+    height: 400px;
+    z-index: 0;
+  }
+/* -x- */
+
+/* -- Footer Section -- */
+
+  footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  #footer-index {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: 100%;
+    background-color: var(--panel-color);
+  }
+
+  #footer-index > p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Verdana;
+  }
