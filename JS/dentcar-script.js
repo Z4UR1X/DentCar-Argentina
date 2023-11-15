@@ -61,7 +61,7 @@ window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
 
   titleRightAnim.forEach(element => {
-    if (scrollY >= 0.20 * window.innerHeight) {
+    if (scrollY >= 0.10 * window.innerHeight) {
       element.style.transform = 'translateX(100%)';
       element.style.opacity = '0';
     } else {
@@ -71,7 +71,7 @@ window.addEventListener('scroll', () => {
   });
 
   titleLeftAnim.forEach(element => {
-    if (scrollY >= 0.20 * window.innerHeight) {
+    if (scrollY >= 0.10 * window.innerHeight) {
       element.style.transform = 'translateX(-100%)';
       element.style.opacity = '0';
     } else {
