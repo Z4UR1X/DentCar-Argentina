@@ -22,8 +22,9 @@
           />
         </div>
           <span class="nav-button"><a class="nav-link" href="#home-section"><p class='nav-p'>Inicio</p></a></span>
-          <span class="nav-button"><a class="nav-link" href="#trabajos-section"><p class='nav-p'>Servicios</p></a></span>
+          <span class="nav-button"><a class="nav-link" href="#services-section"><p class='nav-p'>Servicios</p></a></span>
           <span class="nav-button"><a class="nav-link" href="#contact-section"><p class='nav-p'>Contacto</p></a></span>
+          
           <div id='nav-contact-panel'>
             <div class='social-media-cont'>
               <a class='profile-link' href='https://wa.me/5491161958598' target='_blank'>
@@ -41,6 +42,33 @@
               </a>
             </div>
           </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a class='nav-link-dropped' href="#home-section"><p class='nav-p''>Inicio</p></a>
+              <a class='nav-link-dropped' href="#services-section"><p class='nav-p'>Servicios</p></a>
+              <a class='nav-link-dropped' href="#contact-section"><p class='nav-p'>Contacto</p></a>
+              <div id='nav-contact-panel'>
+                <div class='social-media-cont'>
+                  <a class='profile-link' href='https://wa.me/5491161958598' target='_blank'>
+                    <span class='link-logo-container'><i class="fa-brands fa-whatsapp" style="color: white;"></i></span>
+                  </a>
+                </div>
+                <div class='social-media-cont'>
+                  <a class='profile-link' href='https://www.facebook.com/dentcarargentinas' target='_blank'>
+                    <span class='link-logo-container'><i class="fa-brands fa-facebook" style="color: white;"></i></span>
+                  </a>
+                </div>
+                <div class='social-media-cont'>
+                  <a class='profile-link' href='https://www.instagram.com/dentcar.sacabollos/' target='_blank'>
+                    <span class='link-logo-container'><i id='instagram-logo' class="fa-brands fa-instagram" style="color: white;"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
     </header>
 <!-- Home Section -->
@@ -50,16 +78,15 @@
           id='display-image'
           src=''
           alt='Posted Image'
+          class='img-fluid'
         />
       </div>
-      <div id='description-cont'>
       <p id='imageDescription'>
         <span class='anim-mov-right'>Somos Especialistas Sacabollos</span>
         <span class='anim-mov-left'>con Todas las Compañías de Seguro.</span>
         <span class='anim-mov-right'>restauramos tu vehículo</span> 
         <span class='anim-mov-left'>sin dejar ningún rastro.</span>
       </p>
-      </div>
     </main>
 <!-- Services Section -->
     <section id='services-section'> 

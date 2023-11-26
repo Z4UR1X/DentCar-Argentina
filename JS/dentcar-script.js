@@ -81,3 +81,9 @@ window.addEventListener('scroll', () => {
   });
 });
 /* -x- */
+
+/* */
+function toggleDropdown() {
+  let dropdownContent = document.querySelector('.dropdown-content');
+  dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+}
