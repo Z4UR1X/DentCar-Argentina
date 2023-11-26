@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+    <title>DentCar | Detailing | Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Lucas Nicolás Correa">
+    <meta name="copyright" content="SZ Designs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton">
+    <script src="https://kit.fontawesome.com/2c4ab9ad81.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+        <!-- | Navbar Logo | -->
+          <a class="navbar-brand" href="#">
+            <img
+              class='img-fluid'
+              id='logo-img'
+              src='Resources\Images\DentCar-Gallery\DentCarLogo.png'
+              alt='DentCar Logo'
+            />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link d-flex justify-content-center align-self-center" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex justify-content-center align-self-center" href="#">Servicios</a>
+              </li>
+            <!-- | Dropdown Button | -->
+              <li class="nav-item dropdown">
+                <a class="nav-link d-flex justify-content-center align-self-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contacto
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item d-flex justify-content-center align-self-center" href="#">Facebook</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item d-flex justify-content-center align-self-center" href="#">Instagram</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item d-flex justify-content-center align-self-center" href="#">WhatsApp</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+<!-- | Home Section | -->
+    <main id='home'>
+      <div id='carousel-cont'>
+        <div id="home-img-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#home-img-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#home-img-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#home-img-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner transition">
+            <div class="carousel-item active" data-bs-interval='5000'> <!-- | Carousel Img 1 / #HomeSec | -->
+              <img 
+                src="Resources\Images\DentCar-Gallery\bolloDemo3.jpg" 
+                class="main-img d-block w-100" 
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Somos Especialistas Sacabollos</h5>
+                <p>Trabajamos con todas las compañías de Seguro</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval='5000'> <!-- | Carousel Img 2 / #HomeSec | -->
+              <img 
+                src="Resources\Images\DentCar-Gallery\bolloDemo2.jpg" 
+                class="main-img d-block w-100" 
+                alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Hacemos Trabajos de Chapa y Pintura</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval='5000'> <!-- | Carousel Img 3 / #HomeSec | -->
+              <img 
+                src="Resources\Images\DentCar-Gallery\bolloDemo1.jpg" 
+                class="main-img d-block w-100" 
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#home-img-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#home-img-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </main>
+<!-- | Services Section | -->
+    <section id='services'>
+      <div class='container-fluid'>
+        <div class='svc-h1-cont text-center'>
+          <h1 class='service-h1 anim-mov-right-in'>Nuestro Compromiso</h1>
+          <h1 class='service-h1 anim-mov-left-in'>Asegura Calidad</h1>
+        </div>
+        <div id='' class="row">
+          <hr class=''>
+            <div class="svc-cont">
+              <img class='service-img img-fluid' src="../Resources/Images/img-1.jpg" alt="Imagen 1">
+              <h2 class='service-h2 text-center'>Ferrari F40</h2>
+              <p class="service-text text-center"></p>
+            </div>
+          <hr class=''>
+            <div class="svc-cont">
+              <img class="service-img img-fluid" src="../Resources/Images/img-2.jpg" alt="Imagen 2" >
+              <h2 class='service-h2 text-center'>Lamborghini Aventador</h2>
+              <p class="service-text text-center"></p>
+            </div>
+          <hr class=''>
+            <div class="svc-cont">
+              <img class="service-img img-fluid" src="../Resources/Images/img-3.jpg" alt="Imagen 3">
+              <h2 class='service-h2 text-center'>Mclaren F1</h2>
+              <p class="service-text text-center"></p>
+            </div>
+          <hr>
+        </div>
+      </div>
+    </section>
+<!-- | Contact Section | -->
+    <section id='contact'>
+
+    </section>
+<!-- | Scripts Section | -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src='JS/scripts.js'></script>
+  </body>
+<!-- | Footer Section | -->
+<footer id='footer-index' class="bg-dark text-white py-4">
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-6'>
+        <p class='mb-0'>© 2023 DentCar Argentina | <a href="tel:+541142316375" class="text-white">011 4231-6375 (AR)</a></p>
+      </div>
+      <div class='col-md-6 text-md-right'>
+        <p class='mb-0'>Desarrollado por <a href="https://www.zxdevelopments.com" class="text-white" target="_blank">ZX Developments</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
