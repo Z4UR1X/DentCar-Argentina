@@ -1,165 +1,163 @@
 <!DOCTYPE html>
-<html lang='utf-8'>
+<html lang='es'>
   <head>
-    <title>DentCar | Sacabollos</title>
-      <meta charset="utf-8">
-      <meta name="author" content="Lucas Nicolás Correa">
-      <meta name="copyright" content="SZ Designs">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/dentcar-styles.css">
+    <title>DentCar | Detailing | Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Lucas Nicolás Correa">
+    <meta name="copyright" content="SZ Designs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Anton">
     <script src="https://kit.fontawesome.com/2c4ab9ad81.js" crossorigin="anonymous"></script>
   </head>
   <body>
-<!-- <header/>, <nav/> -->
-    <header>  
-      <nav id='navbar'>
-        <div id='logo-cont'>
-          <img
-            id='logo-img'
-            src='Resources/Images/DentCar-Gallery/DentCarLogo.png'
-            alt='DentCar-Logo'
-          />
-        </div>
-          <span class="nav-button"><a class="nav-link" href="#home-section"><p class='nav-p'>Inicio</p></a></span>
-          <span class="nav-button"><a class="nav-link" href="#services-section"><p class='nav-p'>Servicios</p></a></span>
-          <span class="nav-button"><a class="nav-link" href="#contact-section"><p class='nav-p'>Contacto</p></a></span>
-          
-          <div id='nav-contact-panel'>
-            <div class='social-media-cont'>
-              <a class='profile-link' href='https://wa.me/5491161958598' target='_blank'>
-                <span class='link-logo-container'><i class="fa-brands fa-whatsapp" style="color: white;"></i></span>
-              </a>
-            </div>
-            <div class='social-media-cont'>
-              <a class='profile-link' href='https://www.facebook.com/dentcarargentinas' target='_blank'>
-                <span class='link-logo-container'><i class="fa-brands fa-facebook" style="color: white;"></i></span>
-              </a>
-            </div>
-            <div class='social-media-cont'>
-              <a class='profile-link' href='https://www.instagram.com/dentcar.sacabollos/' target='_blank'>
-                <span class='link-logo-container'><i id='instagram-logo' class="fa-brands fa-instagram" style="color: white;"></i></span>
-              </a>
-            </div>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+        <!-- | Navbar Logo | -->
+          <a class="navbar-brand" href="#">
+            <img
+              class='img-fluid'
+              id='logo-img'
+              src='Resources\Images\DentCar-Gallery\DentCarLogo.png'
+              alt='DentCar Logo'
+            />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link d-flex justify-content-center align-self-center" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex justify-content-center align-self-center" href="#">Servicios</a>
+              </li>
+            <!-- | Dropdown Button | -->
+              <li class="nav-item dropdown">
+                <a class="nav-link d-flex justify-content-center align-self-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contacto
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item d-flex justify-content-center align-self-center" href="#">Facebook</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item d-flex justify-content-center align-self-center" href="#">Instagram</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item d-flex justify-content-center align-self-center" href="#">WhatsApp</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a class='nav-link-dropped' href="#home-section"><p class='nav-p''>Inicio</p></a>
-              <a class='nav-link-dropped' href="#services-section"><p class='nav-p'>Servicios</p></a>
-              <a class='nav-link-dropped' href="#contact-section"><p class='nav-p'>Contacto</p></a>
-              <div id='nav-contact-panel'>
-                <div class='social-media-cont'>
-                  <a class='profile-link' href='https://wa.me/5491161958598' target='_blank'>
-                    <span class='link-logo-container'><i class="fa-brands fa-whatsapp" style="color: white;"></i></span>
-                  </a>
-                </div>
-                <div class='social-media-cont'>
-                  <a class='profile-link' href='https://www.facebook.com/dentcarargentinas' target='_blank'>
-                    <span class='link-logo-container'><i class="fa-brands fa-facebook" style="color: white;"></i></span>
-                  </a>
-                </div>
-                <div class='social-media-cont'>
-                  <a class='profile-link' href='https://www.instagram.com/dentcar.sacabollos/' target='_blank'>
-                    <span class='link-logo-container'><i id='instagram-logo' class="fa-brands fa-instagram" style="color: white;"></i></span>
-                  </a>
-                </div>
+        </div>
+      </nav>
+    </header>
+<!-- | Home Section | -->
+    <main id='home'>
+      <div id='carousel-cont'>
+        <div id="home-img-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#home-img-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#home-img-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#home-img-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner transition">
+            <div class="carousel-item active" data-bs-interval='5000'> <!-- | Carousel Img 1 / #HomeSec | -->
+              <img 
+                src="Resources\Images\DentCar-Gallery\bolloDemo3.jpg" 
+                class="main-img d-block w-100" 
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Somos Especialistas Sacabollos</h5>
+                <p>Trabajamos con todas las compañías de Seguro</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval='5000'> <!-- | Carousel Img 2 / #HomeSec | -->
+              <img 
+                src="Resources\Images\DentCar-Gallery\bolloDemo2.jpg" 
+                class="main-img d-block w-100" 
+                alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Hacemos Trabajos de Chapa y Pintura</h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval='5000'> <!-- | Carousel Img 3 / #HomeSec | -->
+              <img 
+                src="Resources\Images\DentCar-Gallery\bolloDemo1.jpg" 
+                class="main-img d-block w-100" 
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
               </div>
             </div>
           </div>
-        </nav>
-    </header>
-<!-- Home Section -->
-    <main id='home-section' >
-      <div id='image-container'>
-        <img
-          id='display-image'
-          src=''
-          alt='Posted Image'
-          class='img-fluid'
-        />
+          <button class="carousel-control-prev" type="button" data-bs-target="#home-img-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#home-img-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      <p id='imageDescription'>
-        <span class='anim-mov-right'>Somos Especialistas Sacabollos</span>
-        <span class='anim-mov-left'>con Todas las Compañías de Seguro.</span>
-        <span class='anim-mov-right'>restauramos tu vehículo</span> 
-        <span class='anim-mov-left'>sin dejar ningún rastro.</span>
-      </p>
     </main>
-<!-- Services Section -->
-    <section id='services-section'> 
-        <h1>Nuestro Compromiso Asegura Calidad</h1>
-      <div id='services-cont'>
-        <article class='article-cont'>  
-          <img
-            id='img-service'
-            src='Resources/Images/DentCar-Gallery/bolloDemo2.jpg'
-            alt='Vehículo Abollado'
-          />
-          <p id='p-service'>En nuestro taller especializado en sacabollos, nos destacamos por nuestra habilidad excepcional para eliminar abolladuras sin necesidad de repintar. Nuestros técnicos expertos emplean técnicas de última generación y herramientas especializadas para restaurar la forma original de su vehículo, preservando la integridad de la pintura. Con meticulosidad y precisión, devolvemos su automóvil a su estado original, sin rastro de las imperfecciones causadas por abolladuras.</p>
-        </article>
-        <article class='article-cont'>
-          <p id='p-service'>En el corazón de nuestro servicio de sacabollos se encuentra la eficiencia. Comprendemos la importancia de su tiempo y nos comprometemos a realizar reparaciones rápidas sin comprometer la calidad. Nuestro equipo altamente capacitado utiliza técnicas avanzadas de sacabollos para abordar cualquier abolladura, desde las más pequeñas hasta las más grandes, de manera rápida y precisa. Experimente una reparación sin complicaciones que le permitirá volver a la carretera con su vehículo luciendo impecable.</p>
-          <img
-            id='img-service'
-            src='Resources/Images/DentCar-Gallery/bolloDemo3.jpg'
-            alt='Vehículo Abollado'
-          />
-        </article>
-        <article class='article-cont'>
-          <img
-            id='img-service'
-            src='Resources/Images/DentCar-Gallery/bolloDemo1.jpg'
-            alt='Vehículo Abollado'
-          />
-          <p id='p-service'>En nuestro taller, la restauración estética va más allá de simplemente eliminar abolladuras. Nos esforzamos por devolver a su vehículo su atractivo original con un enfoque meticuloso en cada detalle. Utilizando métodos probados y herramientas especializadas, logramos resultados que no solo eliminan las imperfecciones visibles, sino que también restauran la apariencia general de su automóvil. Confíe en nosotros para una restauración estética que va más allá de sus expectativas.</p>
-        </article>
-      </div>
-    </section>
-<!-- Sección de Contacto -->
-    <section id='contact-section'> 
-      <div id='contact-panel'>
-        <h1 id='h1-contact'>Contáctanos en nuestras redes sociales</h1>
-          <div id='phone-cont'>
-            <i class="fa-solid fa-phone"></i>
-            <p id='contactNumber'>011 4231-6375</p>
-          </div>
-        <div id='link-panel'>
-          <div class='contactLink-cont'>
-            <a class='profileLink' href='https://wa.me/5491161958598' target='_blank'>
-              <span class='linkLogoContainer'><i class="fa-brands fa-whatsapp" style="color: rgb(0, 163, 0);"></i></span>
-            </a>
-          </div>
-          <div class='contactLink-cont'>
-            <a class='profileLink' href='https://www.facebook.com/dentcarargentinas' target='_blank'>
-              <span class='linkLogoContainer'><i class="fa-brands fa-facebook" style="color: rgb(0, 110, 255);"></i></span>
-            </a>
-          </div>
-          <div class='contactLink-cont'>
-            <a class='profileLink' href='https://www.instagram.com/dentcar.sacabollos/' target='_blank'>
-              <span class='linkLogoContainer'><i id='instagram-logo' class="fa-brands fa-instagram"></i></span>
-            </a>
-          </div>
+<!-- | Services Section | -->
+    <section id='services'>
+      <div class='container-fluid'>
+        <div class='svc-h1-cont text-center'>
+          <h1 class='service-h1 anim-mov-right-in'>Nuestro Compromiso</h1>
+          <h1 class='service-h1 anim-mov-left-in'>Asegura Calidad</h1>
         </div>
-        <div id='location-cont'>
-          <i class="fa-solid fa-location-dot"></i>
-          <p>Av. Hipólito Yrigoyen N°10573. Lomas de Zamora</P>
+        <div id='' class="row">
+          <hr class=''>
+            <div class="svc-cont">
+              <img class='service-img img-fluid' src="../Resources/Images/img-1.jpg" alt="Imagen 1">
+              <h2 class='service-h2 text-center'>Ferrari F40</h2>
+              <p class="service-text text-center"></p>
+            </div>
+          <hr class=''>
+            <div class="svc-cont">
+              <img class="service-img img-fluid" src="../Resources/Images/img-2.jpg" alt="Imagen 2" >
+              <h2 class='service-h2 text-center'>Lamborghini Aventador</h2>
+              <p class="service-text text-center"></p>
+            </div>
+          <hr class=''>
+            <div class="svc-cont">
+              <img class="service-img img-fluid" src="../Resources/Images/img-3.jpg" alt="Imagen 3">
+              <h2 class='service-h2 text-center'>Mclaren F1</h2>
+              <p class="service-text text-center"></p>
+            </div>
+          <hr>
         </div>
       </div>
-      <div id='googleMap-cont'>
-        <h1 id='h1-map'>Nuestra Sucursal en Lomas de Zamora</h1>
-        <iframe id='googleMap' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2317.180348201001!2d-58.406913652324945!3d-34.78108224937137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2fcb23cfd25%3A0x7cd0483ce610ba7a!2sDentcar%20Sacabollos-Detailing!5e0!3m2!1ses-419!2sar!4v1698950036351!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
     </section>
-    <script src='JS/dentcar-script.js'></script>
+<!-- | Contact Section | -->
+    <section id='contact'>
+
+    </section>
+<!-- | Scripts Section | -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src='JS/scripts.js'></script>
   </body>
-<!-- Footer Section -->
-  <footer id='footer-index'>
-    <div id='foot-cont'>
-      <p>Copyright © DentCar Argentina | 011 4231-6375 (AR)</p>
-      <p>Desarrollado por ZX Developments</p>
+<!-- | Footer Section | -->
+<footer id='footer-index' class="bg-dark text-white py-4">
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-6'>
+        <p class='mb-0'>© 2023 DentCar Argentina | <a href="tel:+541142316375" class="text-white">011 4231-6375 (AR)</a></p>
+      </div>
+      <div class='col-md-6 text-md-right'>
+        <p class='mb-0'>Desarrollado por <a href="https://www.zxdevelopments.com" class="text-white" target="_blank">ZX Developments</a></p>
+      </div>
     </div>
-  </footer>
+  </div>
+</footer>
 </html>
