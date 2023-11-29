@@ -24,12 +24,6 @@
 /* ->-> Media Queries Section <-<- */
 
 @media only screen and (min-width: 768px) {
-  .navbar a {
-    border-radius: 3px;
-    text-shadow: 0px 3px 3px black;
-    transition: 0.3s ease-in-out;
-  }
-  
   .navbar a:hover:not(.navbar-brand) {
     color: white;
     border-bottom: solid 2px red;
@@ -80,6 +74,7 @@
 body {
   padding: 0;
   margin: 0;
+  background: linear-gradient(to bottom, black, red);
   overflow-x: hidden;
 }
 
@@ -88,17 +83,30 @@ body {
 .navbar {
   width: 100%;
   background-color: var(--black-background);
-  border-bottom: solid 2px var(--red-detail);
+  border-bottom: solid 5px var(--red-detail);
   transition: background-color 0.6s ease-in-out;
   z-index: 3;
 }
 
-/* ->-> Logo Configuration <-<- */
+.navbar a {
+  border-radius: 3px;
+  text-shadow: 0px 3px 3px black;
+  transition: 0.3s ease-in-out;
+}
 
 .navbar-brand {
   height: 100%;
   width: 65%;
   padding: 0px 60px 10px 60px;
+}
+
+.navbar-toggler {
+  position: fixed;
+  border: none;
+  outline: none;
+  transform: scale(1.6);
+  left: 80vw;
+  top: 8vh;
 }
 
 .nav-link {
@@ -130,13 +138,13 @@ body {
   justify-content: center;
   height: auto;
   max-height: 100vh;
-  background: linear-gradient(to bottom, var(--black-background), var(--red-detail));
+  
   z-index: 1;
 }
 
 #carousel-cont {
   position: relative;
-  margin-top: 21vh;
+  margin-top: 22vh;
   height: 100%;
   max-width: max-content;
 }
@@ -156,7 +164,7 @@ body {
 /* ->-> Serices Section <-<- */
 
 #services {
-  background: linear-gradient(to bottom, var(--black-background), var(--red-detail));
+  background-color: var(--black-background);
 }
 
 .svc-h1-cont {
