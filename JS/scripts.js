@@ -45,3 +45,18 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+/* Smooth Transitions Effect */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    // Verificar si el atributo 'href' existe y no es simplemente '#'
+    const targetId = this.getAttribute('href');
+    if (targetId !== '#' && document.querySelector(targetId)) {
+      document.querySelector(targetId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+});

@@ -15,7 +15,7 @@
     <header>
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-        <!-- | Navbar Logo | -->
+          <!-- | Navbar Logo | -->
           <a class="navbar-brand" href="#">
             <img
               class='img-fluid'
@@ -25,36 +25,40 @@
             />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars" style='color: #fff;'></i>
+            <i class="fa-solid fa-bars" style='color: white;'></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link d-flex justify-content-center align-self-center" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-flex justify-content-center align-self-center" href="#">Servicios</a>
-              </li>
-            <!-- | Dropdown Button | -->
-              <li class="nav-item dropdown">
-                <a class="nav-link d-flex justify-content-center align-self-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contacto
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item d-flex justify-content-center align-self-center" href="#">Facebook</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item d-flex justify-content-center align-self-center" href="#">Instagram</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item d-flex justify-content-center align-self-center" href="#">WhatsApp</a></li>
-                </ul>
-              </li>
+            <ul class="navbar-nav d-flex">
+              <div class='nav-buttons d-flex flex-row justify-content-center'>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#home-sec">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services-sec">Servicios</a>
+                </li>
+                  <a class="nav-link" href="#contact-sec">Contacto</a>
+                </li>
+              </div>
+              <div class='social-media-cont d-flex justify-content-center'>
+                <li class='nav-item'>
+                  <a class='profileLink' href='https://www.instagram.com/dentcar.sacabollos/' target='_blank'>
+                    <span class='linkLogoContainer'><i class="fa-brands fa-instagram"></i></span>
+                  </a>
+                  <a class='profileLink' href='https://www.facebook.com/dentcarargentinas' target='_blank'>
+                    <span class='linkLogoContainer'><i class="fa-brands fa-facebook"></i></span>
+                  </a>
+                  <a class='profileLink' href='https://wa.me/5491161958598' target='_blank'>
+                    <span class='linkLogoContainer'><i class="fa-brands fa-whatsapp"></i></span>
+                  </a>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 <!-- | Home Section | -->
-    <main id='home'>
+    <main id='home-sec'>
       <div id='carousel-cont'>
         <div id="home-img-carousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -71,28 +75,28 @@
               />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Somos Especialistas Sacabollos</h5>
-                <p>Trabajamos con todas las compañías de Seguro</p>
+                <p>Nuestro servicio incluye: Granizo, Siniestros y Accidentes.</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval='5000'> <!-- | Carousel Img 2 / #HomeSec | -->
               <img 
-                src="Resources\Images\DentCar-Gallery\bolloDemo2.jpg" 
+                src="Resources\Images\DentCar-Gallery\bolloDemo1.jpg" 
                 class="main-img d-block w-100" 
                 alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Hacemos Trabajos de Chapa y Pintura</h5>
-                <p></p>
+                <h5>No importa la gravedad del daño</h5>
+                <p>También realizamos trabajos de Chapa y Pintura</p>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval='5000'> <!-- | Carousel Img 3 / #HomeSec | -->
               <img 
-                src="Resources\Images\DentCar-Gallery\bolloDemo1.jpg" 
+                src="Resources\Images\DentCar-Gallery\bolloDemo2.jpg" 
                 class="main-img d-block w-100" 
                 alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+                <h5>Cotizaciónes precisas de acuerdo a Tú caso</h5>
+                <p>Trabajamos con todas las compañías de seguro.</p>
               </div>
             </div>
           </div>
@@ -108,40 +112,95 @@
       </div>
     </main>
 <!-- | Services Section | -->
-    <section id='services'>
+    <section id='services-sec'>
       <div class='container-fluid'>
         <div class='svc-h1-cont text-center'>
           <h1 class='service-h1 anim-mov-right-in'>Nuestro Compromiso</h1>
           <h1 class='service-h1 anim-mov-left-in'>Asegura Calidad</h1>
         </div>
         <div id='' class="row text-center">
-          <hr class=''>
             <div class="svc-cont">
               <img class='service-img img-fluid' src='Resources/Images/img-1.jpg' alt='Imagen 1'>
-              <h2 class='service-h2'>Ferrari F40</h2>
+              <h2 class='service-h2'> - <span class='fst-italic'>Ferrari </span><span class='text-red'>F40</span> - </h2>
               <p class="service-text">Servicio de chapa y pintura realizado luego de un violento accidente de tránsito.</p>
             </div>
-          <hr class=''>
+          <hr class='service-hr'>
             <div class="svc-cont">
               <img class='service-img img-fluid' src='Resources/Images/img-2.jpg' alt='Imagen 2'>
-              <h2 class='service-h2'>Lamborghini Aventador</h2>
-              <p class="service-text">Aplicación de recubrimientos cerámicos para proteger la pintura contra rayones y contaminantes.</p>
+              <h2 class='service-h2'> - <span class='fst-italic'>Lamborghini </span><span class='text-red'>Aventador</span> - </h2>
+              <p class="service-text">Servicio de eliminación de abolladuras sin pintura por fuerte granizada</p>
             </div>
-          <hr class=''>
+          <hr class='service-hr'>
             <div class='svc-cont'>
               <img class='service-img img-fluid' src='Resources/Images/img-3.jpg' alt="Imagen 3">
-              <h2 class='service-h2'>Mclaren F1</h2>
-              <p class='service-text'></p>
+              <h2 class='service-h2'> - <span class='fst-italic'>Mclaren </span><span class='text-red'>F1</span> - </h2>
+              <p class='service-text'>Aplicación de recubrimientos cerámicos para proteger la pintura contra rayones y contaminantes.</p>
             </div>
-          <hr>
         </div>
       </div>
     </section>
+      <hr id='line-separator'>
 <!-- | Contact Section | -->
-    <section id='contact'>
-
+    <section id='contact-sec' class='contact row justify-content-center'> 
+      <div class='contact-panel text-center'>
+        <h1 class='contact-h1'>Contáctanos en nuestras redes sociales</h1>
+          <div class='phone-cont d-flex container-fluid justify-content-center align-content-center'>
+            <i id='cellphone-icon' class="fa-solid fa-phone"></i>
+            <p class='contact-cellnumber'>011 4231-6375</p>
+          </div>
+        <div class='link-panel d-flex flex-row container-fluid'>
+          <div class='contactLink-cont justify-content-center align-content-center'>
+            <a class='profileLink' href='https://wa.me/5491161958598' target='_blank'>
+              <span class='linkLogoContainer'><i class="fa-brands fa-whatsapp fa-shake"></i></span>
+            </a>
+          </div>
+          <div class='contactLink-cont justify-content-center align-content-center'>
+            <a class='profileLink' href='https://www.facebook.com/dentcarargentinas' target='_blank'>
+              <span class='linkLogoContainer'><i class="fa-brands fa-facebook"></i></span>
+            </a>
+          </div>
+          <div class='contactLink-cont text-center'>
+            <a class='profileLink' href='https://www.instagram.com/dentcar.sacabollos/' target='_blank'>
+              <span class='linkLogoContainer'><i class="fa-brands fa-instagram"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class='location-cont'> <!-- Location text -->
+          <p>
+            <i id='red-point' class="fa-solid fa-location-dot"></i> 
+            Av. Hipólito Yrigoyen N°10573.
+          </P>
+          <P>Lomas de Zamora</P>
+        </div>
+      </div>
+      <div class='googleMap-cont container-fluid'>
+        <iframe class='googleMap' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2317.180348201001!2d-58.406913652324945!3d-34.78108224937137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2fcb23cfd25%3A0x7cd0483ce610ba7a!2sDentcar%20Sacabollos-Detailing!5e0!3m2!1ses-419!2sar!4v1698950036351!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
 <!-- | Scripts Section | -->
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyASccZyckC2K9TzhK1JsLasMkKebHbNt1o",
+    authDomain: "dentcar-argentina.firebaseapp.com",
+    projectId: "dentcar-argentina",
+    storageBucket: "dentcar-argentina.appspot.com",
+    messagingSenderId: "378962613214",
+    appId: "1:378962613214:web:981a3048c57ab57a8ac34f",
+    measurementId: "G-TBZN9EN5MX"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
@@ -149,13 +208,18 @@
   </body>
 <!-- | Footer Section | -->
 <footer id='footer-index' class='bg-dark text-white py-4'>
+  <div id='animated-separator' class=''>
+    <img
+      class='img-auto-parallax' src='Resources/Images/SportCarImg.png' alt='Aquí debería haber un auto que se mueve'
+    />
+  </div>
   <div class='container'>
     <div class='row'>
       <div class='col-md-6'>
         <p class='mb-0'>© 2023 DentCar Argentina | <a href='tel:+541142316375' class='text-white'>011 4231-6375 (AR)</a></p>
       </div>
       <div class='col-md-6 text-md-right'>
-        <p class='mb-0'>Desarrollado por <a href='https://www.zxdevelopments.com' class='text-white' target='_blank'>ZX Developments</a></p>
+        <p class='mb-0'>Desarrollado por <a href='https://www.instagram.com/_z4ur1x_/' class='text-white' target='_blank'>ZX Developments</a></p>
       </div>
     </div>
   </div>

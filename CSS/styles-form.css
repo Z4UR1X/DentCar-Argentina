@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+main {
+  background: linear-gradient(#9e0015, #000000);
+  height: 100vh;
+  width: 100%;
+}
+
+#logo-form {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vh;
+  top: -12vh;
+  padding-right: 15px;
+}
+
+#form-cont {
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 80vh;
+  width: 60vh;
+  padding: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: solid 5px #9e0015;
+}
+
+#contact-form {
+  padding-top: 20vh;
+  color: white;
+}
+
+.label-style {
+  color: white;
+}
+
+.terms-text {
+  color: white;
+  text-decoration: underline;
+}
+
+#submit-button {
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  font-size: x-large;
+  border-radius: 10px;
+}
